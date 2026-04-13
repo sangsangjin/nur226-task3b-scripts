@@ -56,15 +56,22 @@
   .play-line:hover { background: #c9b99a; color: #fff; border-color: #c9b99a; }
   .play-line.active { background: #c9b99a; color: #fff; border-color: #c9b99a; }
   .say-wrap { display: flex; align-items: flex-start; gap: 0; }
-  @media print { body { padding: 10px; background: #fff; } .section-title { break-after: avoid; } table { break-inside: avoid; } .top-btns, .play-line { display: none; } }
+  body.practice-mode .say-wrap > span:last-child { filter: blur(6px); cursor: pointer; user-select: none; transition: filter 0.3s; }
+  body.practice-mode .say-wrap > span:last-child.revealed { filter: none; }
+  .shadow-indicator { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%); background: #c9b99a; color: #fff; padding: 14px 32px; border-radius: 30px; font-weight: 700; font-size: 1.05em; box-shadow: 0 4px 16px rgba(0,0,0,0.15); z-index: 1000; display: none; animation: pulse 1s infinite; }
+  @keyframes pulse { 0%,100%{ opacity:1; } 50%{ opacity:0.5; } }
+  @media print { body { padding: 10px; background: #fff; } .section-title { break-after: avoid; } table { break-inside: avoid; } .top-btns, .play-line, .shadow-indicator { display: none; } }
 </style>
 </head>
 <body>
 
 <div class="top-btns">
+  <button class="tts-btn" id="practiceBtn" onclick="togglePractice()">Practice</button>
+  <button class="tts-btn" id="shadowBtn" onclick="toggleShadow()">Shadow</button>
   <button class="tts-btn" id="playAllBtn" onclick="togglePlayAll()">Play All</button>
   <a class="chart-btn" href="Marlee Talinga.pdf" target="_blank">Med Chart</a>
 </div>
+<div class="shadow-indicator" id="shadowIndicator">Your turn — say it!</div>
 <p style="text-align:center;font-size:0.85em;font-weight:700;color:#b0a590;letter-spacing:1.5px;margin-bottom:6px;">MADE BY JACOB KANG</p>
 <h1>Marlee Talinga – SubCut Heparin Script</h1>
 <p class="subtitle">NUR 226 Task 3b &middot; Case Study 1 &middot; Subcutaneous Injection</p>
@@ -382,6 +389,7 @@
 const synth = window.speechSynthesis;
 let allLines = [];
 let playingAll = false;
+let shadowMode = false;
 let currentIdx = -1;
 
 function getEnVoice() {
@@ -411,15 +419,25 @@ function initTTS() {
     td.appendChild(wrapper);
   });
   allLines = Array.from(document.querySelectorAll('.play-line'));
+
+  document.addEventListener('click', function(e) {
+    if (!document.body.classList.contains('practice-mode')) return;
+    const span = e.target.closest('.say-wrap > span:last-child');
+    if (span) span.classList.toggle('revealed');
+  });
 }
 
 function stopAll() {
   synth.cancel();
   playingAll = false;
+  shadowMode = false;
   currentIdx = -1;
   document.querySelectorAll('.play-line.active').forEach(b => b.classList.remove('active'));
   document.getElementById('playAllBtn').textContent = 'Play All';
   document.getElementById('playAllBtn').classList.remove('playing');
+  document.getElementById('shadowBtn').textContent = 'Shadow';
+  document.getElementById('shadowBtn').classList.remove('playing');
+  document.getElementById('shadowIndicator').style.display = 'none';
 }
 
 function playOne(btn) {
@@ -428,7 +446,6 @@ function playOne(btn) {
   const utter = new SpeechSynthesisUtterance(text);
   utter.voice = getEnVoice();
   utter.rate = 0.92;
-  utter.pitch = 1;
   btn.classList.add('active');
   btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
   utter.onend = () => { btn.classList.remove('active'); };
@@ -436,7 +453,7 @@ function playOne(btn) {
 }
 
 function playNext() {
-  if (!playingAll) return;
+  if (!playingAll || shadowMode) return;
   currentIdx++;
   if (currentIdx >= allLines.length) { stopAll(); return; }
   const btn = allLines[currentIdx];
@@ -444,24 +461,75 @@ function playNext() {
   const utter = new SpeechSynthesisUtterance(text);
   utter.voice = getEnVoice();
   utter.rate = 0.92;
-  utter.pitch = 1;
   document.querySelectorAll('.play-line.active').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
   utter.onend = () => {
     btn.classList.remove('active');
-    if (playingAll) setTimeout(playNext, 400);
+    if (playingAll && !shadowMode) setTimeout(playNext, 400);
   };
   synth.speak(utter);
 }
 
 function togglePlayAll() {
-  if (playingAll || synth.speaking) { stopAll(); return; }
+  if (playingAll || shadowMode || synth.speaking) { stopAll(); return; }
   playingAll = true;
   currentIdx = -1;
   document.getElementById('playAllBtn').textContent = 'Stop';
   document.getElementById('playAllBtn').classList.add('playing');
   playNext();
+}
+
+/* ── Practice Mode (가림 모드) ── */
+function togglePractice() {
+  document.body.classList.toggle('practice-mode');
+  const btn = document.getElementById('practiceBtn');
+  if (document.body.classList.contains('practice-mode')) {
+    btn.textContent = 'Show All';
+    btn.classList.add('playing');
+    document.querySelectorAll('.revealed').forEach(el => el.classList.remove('revealed'));
+  } else {
+    btn.textContent = 'Practice';
+    btn.classList.remove('playing');
+  }
+}
+
+/* ── Shadow Mode (셔도잉 모드) ── */
+function toggleShadow() {
+  if (shadowMode || synth.speaking) { stopAll(); return; }
+  shadowMode = true;
+  playingAll = true;
+  currentIdx = -1;
+  document.getElementById('shadowBtn').textContent = 'Stop';
+  document.getElementById('shadowBtn').classList.add('playing');
+  shadowNext();
+}
+
+function shadowNext() {
+  if (!shadowMode) return;
+  currentIdx++;
+  if (currentIdx >= allLines.length) { stopAll(); return; }
+  const btn = allLines[currentIdx];
+  const text = btn.getAttribute('data-text');
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.voice = getEnVoice();
+  utter.rate = 0.88;
+  document.querySelectorAll('.play-line.active').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const t0 = Date.now();
+  utter.onend = () => {
+    btn.classList.remove('active');
+    if (!shadowMode) return;
+    const dur = Date.now() - t0;
+    const pause = Math.max(3000, dur * 0.9);
+    document.getElementById('shadowIndicator').style.display = 'block';
+    setTimeout(() => {
+      document.getElementById('shadowIndicator').style.display = 'none';
+      if (shadowMode) shadowNext();
+    }, pause);
+  };
+  synth.speak(utter);
 }
 
 if (synth.getVoices().length === 0) {
