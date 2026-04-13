@@ -24,13 +24,13 @@
   td:nth-child(2) { font-weight: 700; color: #3a3a3a; }
   td:nth-child(3) { border-left: 1px solid #e8e2d8; }
   tr:last-child td { border-bottom: none; }
-  .say { color: #3a3a3a; }
+  .say { color: #111; font-weight: 500; }
   .action { font-weight: 600; color: #3a3a3a; }
   .kr { color: #777; font-size: 0.9em; }
   .divider-row { background: #faf7f2; }
   .divider-row td { font-weight: 600; color: #8a7d68; padding: 7px 12px; font-size: 0.85em; }
-  .done-row { background: #faf8f4; }
-  .done-row td { color: #8a7d68; }
+  .done-row { background: #e8f5e9; }
+  .done-row td { color: #2e7d32; font-weight: 600; }
   .caution-row { background: #fdf5f0; }
   .caution-row td { font-weight: 600; color: #7a5040; }
   .isbar-label { display: inline-block; background: #b09fd6; color: #fff; width: 26px; height: 26px; line-height: 26px; text-align: center; border-radius: 50%; font-weight: 700; font-size: 0.82em; }
@@ -40,11 +40,23 @@
   .ref-card ul { padding-left: 18px; font-size: 0.85em; color: #555; }
   .ref-card li { margin-bottom: 2px; }
   .footer { text-align: center; color: #c0b8a8; font-size: 0.78em; margin-top: 30px; padding-top: 16px; border-top: 1px solid #e4ddd4; }
-  @media print { body { padding: 10px; background: #fff; } .section-title { break-after: avoid; } table { break-inside: avoid; } }
+  .top-btns { position: fixed; top: 20px; right: 20px; display: flex; gap: 8px; z-index: 999; }
+  .chart-btn, .tts-btn { background: #fff; padding: 10px 18px; border-radius: 10px; font-size: 0.88em; font-weight: 700; cursor: pointer; box-shadow: 0 2px 10px rgba(0,0,0,0.08); transition: all 0.2s ease; text-decoration: none; border: 2px solid #b09fd6; color: #6b5a8e; }
+  .chart-btn:hover, .tts-btn:hover { background: #b09fd6; color: #fff; }
+  .tts-btn.playing { background: #b09fd6; color: #fff; }
+  .play-line { display: inline-block; width: 22px; height: 22px; line-height: 22px; text-align: center; background: #f0ebf5; border: 1px solid #d4c8e8; border-radius: 50%; cursor: pointer; font-size: 11px; margin-right: 6px; vertical-align: middle; transition: all 0.15s; flex-shrink: 0; }
+  .play-line:hover { background: #b09fd6; color: #fff; border-color: #b09fd6; }
+  .play-line.active { background: #b09fd6; color: #fff; border-color: #b09fd6; }
+  .say-wrap { display: flex; align-items: flex-start; gap: 0; }
+  @media print { body { padding: 10px; background: #fff; } .section-title { break-after: avoid; } table { break-inside: avoid; } .top-btns, .play-line { display: none; } }
 </style>
 </head>
 <body>
 
+<div class="top-btns">
+  <button class="tts-btn" id="playAllBtn" onclick="togglePlayAll()">Play All</button>
+  <a class="chart-btn" href="Nasifah Khan Med Chart-1.pdf" target="_blank">Med Chart</a>
+</div>
 <p style="text-align:center;font-size:0.85em;font-weight:700;color:#b0a590;letter-spacing:1.5px;margin-bottom:6px;">MADE BY JACOB KANG</p>
 <h1>Nasifah Khan – IM Ondansetron Script</h1>
 <p class="subtitle">NUR 226 Task 3b &middot; Case Study 2 &middot; Intramuscular Injection</p>
@@ -320,5 +332,98 @@
   <div class="ref-card"><h4>Dose Calculation</h4><ul><li>처방: Ondansetron <b>2 mg</b></li><li>앰플: 4 mg / 2 mL</li><li>= <b>1 mL</b> (절반만 추출)</li><li>나머지 → 폐기</li></ul></div>
 </div>
 <p class="footer">Script – Nasifah Khan IM Ondansetron &middot; NUR 226 Task 3b</p>
+
+<script>
+const synth = window.speechSynthesis;
+let allLines = [];
+let playingAll = false;
+let currentIdx = -1;
+
+function getEnVoice() {
+  const voices = synth.getVoices();
+  return voices.find(v => v.lang.startsWith('en') && v.name.includes('Female'))
+      || voices.find(v => v.lang.startsWith('en-AU'))
+      || voices.find(v => v.lang.startsWith('en'));
+}
+
+function initTTS() {
+  document.querySelectorAll('td.say').forEach(td => {
+    const text = td.textContent.replace(/[→→]/g,'').replace(/\s+/g,' ').trim();
+    if (!text) return;
+    const wrapper = document.createElement('div');
+    wrapper.className = 'say-wrap';
+    const btn = document.createElement('span');
+    btn.className = 'play-line';
+    btn.textContent = '\u25B6';
+    btn.title = 'Play';
+    btn.setAttribute('data-text', text);
+    btn.onclick = function(e) { e.stopPropagation(); playOne(this); };
+    wrapper.appendChild(btn);
+    const content = document.createElement('span');
+    content.innerHTML = td.innerHTML;
+    wrapper.appendChild(content);
+    td.innerHTML = '';
+    td.appendChild(wrapper);
+  });
+  allLines = Array.from(document.querySelectorAll('.play-line'));
+}
+
+function stopAll() {
+  synth.cancel();
+  playingAll = false;
+  currentIdx = -1;
+  document.querySelectorAll('.play-line.active').forEach(b => b.classList.remove('active'));
+  document.getElementById('playAllBtn').textContent = 'Play All';
+  document.getElementById('playAllBtn').classList.remove('playing');
+}
+
+function playOne(btn) {
+  if (synth.speaking) { stopAll(); return; }
+  const text = btn.getAttribute('data-text');
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.voice = getEnVoice();
+  utter.rate = 0.92;
+  utter.pitch = 1;
+  btn.classList.add('active');
+  btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  utter.onend = () => { btn.classList.remove('active'); };
+  synth.speak(utter);
+}
+
+function playNext() {
+  if (!playingAll) return;
+  currentIdx++;
+  if (currentIdx >= allLines.length) { stopAll(); return; }
+  const btn = allLines[currentIdx];
+  const text = btn.getAttribute('data-text');
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.voice = getEnVoice();
+  utter.rate = 0.92;
+  utter.pitch = 1;
+  document.querySelectorAll('.play-line.active').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  btn.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  utter.onend = () => {
+    btn.classList.remove('active');
+    if (playingAll) setTimeout(playNext, 400);
+  };
+  synth.speak(utter);
+}
+
+function togglePlayAll() {
+  if (playingAll || synth.speaking) { stopAll(); return; }
+  playingAll = true;
+  currentIdx = -1;
+  document.getElementById('playAllBtn').textContent = 'Stop';
+  document.getElementById('playAllBtn').classList.add('playing');
+  playNext();
+}
+
+if (synth.getVoices().length === 0) {
+  synth.onvoiceschanged = initTTS;
+} else {
+  initTTS();
+}
+</script>
 </body>
 </html>
