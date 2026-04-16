@@ -128,15 +128,8 @@
   <tr><td>A</td><td>Acknowledge</td><td class="say">"Hello Nasifah, how are you today?"</td><td class="kr">눈 맞추며 인사</td></tr>
   <tr><td>I</td><td>Introduction</td><td class="say">"My name is Jacob. I am a student nurse looking after you today."</td><td class="kr">이름 + 역할</td></tr>
   <tr><td>D</td><td>Duration</td><td class="say">"This should only take a few minutes."</td><td class="kr">소요 시간</td></tr>
-  <tr><td>E</td><td>Explanation</td><td class="say">"The doctor has ordered a medication for you called Ondansetron. It is to help with your nausea and vomiting. I will give it as an injection into the muscle of your arm. Are you happy for me to give this to you?"</td><td class="kr">약물명 + 목적 + 경로 + 초기 동의</td></tr>
+  <tr><td>E</td><td>Explanation + Side effects</td><td class="say">"The doctor has ordered a medication for you called Ondansetron. It is to help with your nausea and vomiting. I will give it as an injection into the muscle of your arm."<br><br>"I just want to let you know about some possible side effects — you might get a headache, feel a bit dizzy, or have some constipation. There might also be some pain at the injection site. If you notice anything unusual, please let the nurses know straight away."<br><br>"Do you have any questions about that? Are you happy for me to give this to you?"</td><td class="kr">약물명 + 경로 + 목적 + <b>부작용 안내</b>(두통, 어지러움, 변비, 주사부위 통증) → 동의</td></tr>
   <tr><td>T</td><td>Thank you</td><td class="say">"Thank you, Nasifah."</td><td class="kr">감사</td></tr>
-  <tr class="divider-row"><td></td><td colspan="3">── Patient Assessment (환자 사정) ──</td></tr>
-  <tr>
-    <td>1</td>
-    <td>Assess patient</td>
-    <td class="say">"Before I get your medication ready — how is your nausea at the moment? On a scale of 0 to 10, how bad is it? And have you vomited recently?"</td>
-    <td class="kr">오심 정도 사정(0-10 scale), 최근 구토 여부 확인. Criteria 2 (patient-centred care) 충족.</td>
-  </tr>
   <tr class="divider-row"><td></td><td colspan="3">── Patient ID Verification (신원 확인) ──</td></tr>
   <tr><td>2</td><td>Ask name & DOB</td><td class="say">"I just need to check your identity. Can you tell me your full name and date of birth?"<br><br>→ "Nasifah Khan, 1st of January 1951."</td><td class="kr">환자에게 직접 말하게</td></tr>
   <tr><td>3</td><td>Check armband</td><td class="say">"Thank you. I will just check your armband. Nasifah Khan, date of birth 1st of January 1951, URN 473493. That matches the chart. Perfect."</td><td class="kr">팔찌 ↔ 처방전 대조</td></tr>
@@ -206,12 +199,10 @@
 </table>
 
 <!-- PART 9 -->
-<div class="section-title">Part 9 – Informed Consent + Side Effects (동의 + 부작용)</div>
+<div class="section-title">Part 9 – Confirm Consent (동의 재확인)</div>
 <table>
   <tr><th>#</th><th>단계</th><th>대사</th><th>한국어 해설</th></tr>
-  <tr><td>1</td><td>Side effects</td><td class="say">"Before I give you this injection, I want to tell you about some possible side effects. With Ondansetron, you might get a headache, feel a bit dizzy, or have constipation. You might also feel a small sting at the injection site. If you notice anything unusual, please tell the nurses straight away."</td><td class="kr">두통, 어지러움, 변비, 주사부위 통증</td></tr>
-  <tr><td>2</td><td>Questions?</td><td class="say">"Do you have any questions before we go ahead?"</td><td class="kr">질문 확인</td></tr>
-  <tr><td>3</td><td>Consent</td><td class="say">"Are you still happy for me to give this injection?"<br><br>→ "Yes."<br><br>"Thank you, Nasifah."</td><td class="kr">Informed consent 획득</td></tr>
+  <tr><td>1</td><td>Confirm consent</td><td class="say">"Nasifah, are you still happy for me to go ahead with the injection?"<br><br>→ "Yes."<br><br>"Thank you, Nasifah."</td><td class="kr">동의 재확인 (부작용은 Part 4에서 이미 설명함)</td></tr>
 </table>
 
 <!-- PART 10 -->
