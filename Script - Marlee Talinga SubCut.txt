@@ -1,0 +1,702 @@
+========================================================================
+   SCRIPT – Marlee Talinga SubCut Heparin Administration
+   NUR 226 Task 3b
+========================================================================
+
+========================================================================
+PART 0: OPENING STATEMENT (오프닝)
+========================================================================
+
+"I, [your name] confirm that I am in a fit state to undertake
+the preparation and completion of the required assessment."
+
+(한국어: 본인이 평가를 수행할 수 있는 적합한 상태임을 확인하는 선언문.
+ 녹화 시작 직후 바로 말한다.)
+
+
+========================================================================
+PART 1: VALID ORDER – 8가지 처방전 확인
+========================================================================
+
+"So first, I will check that I have a valid medication order.
+I need to check eight things on the medication chart."
+
+(한국어: 처방전이 유효한지 8가지 항목을 확인한다.)
+
+1. "The patient's name is – family name Talinga, given name Marlee."
+   (환자 이름 확인)
+
+2. "The date of birth is the 13th of January 2002."
+   (생년월일 확인)
+
+3. "The URN number is 123495."
+   (환자 등록 번호 확인)
+
+4. "The medication is Heparin Sodium."
+   (약물명 확인 – 헤파린 소듐)
+
+5. "The dose is 5000 units."
+   (용량 확인 – 5000단위)
+
+6. "The route is SubCut – subcutaneous."
+   (투여 경로 확인 – 피하주사)
+
+7. "The frequency is BD, which means twice a day, and the dose
+   is due at 0800 hours."
+   (빈도 확인 – 하루 2회, 오전 8시 투여)
+
+8. "The indication is VTE prophylaxis – to prevent blood clots.
+   This makes sense because Marlee is postoperative and needs
+   clot prevention."
+   (적응증 확인 – 정맥혈전색전증 예방, 수술 후 환자이므로 적절)
+
+9. "The date is today's date."
+   (날짜 확인 – 오늘 날짜)
+
+10. "The prescriber has signed. The printed name is J. Jones
+    and the contact number is 5913."
+    (의사 서명 + 이름 + 연락처 확인)
+
+"So, all eight components are present. This is a valid medication order.
+There are no omissions or inaccuracies that I need to report."
+
+(한국어: 8가지 항목이 모두 있으므로 유효한 처방전이다.
+ 보고할 누락이나 불일치 사항 없음.)
+
+
+========================================================================
+PART 2: DRUG RESOURCE / MEDICATION GUIDE (약물 자원 조사)
+========================================================================
+
+"I have already checked my drug resource for Heparin Sodium.
+The dose of 5000 units subcutaneously is within the recommended
+range for VTE prophylaxis, and I have confirmed there are no
+drug interactions on Marlee's chart. So I am satisfied this
+medication is safe to give."
+
+(한국어: 이미 약물 가이드를 확인했다.
+ 용량은 범위 내이고, 상호작용 없음 → 안전하고 적절.)
+
+
+========================================================================
+PART 3: HAND HYGIENE + GATHER EQUIPMENT (손위생 + 장비 준비)
+========================================================================
+
+*Perform hand hygiene*
+
+(한국어: 손위생을 먼저 시행한다 – 5 moments of hand hygiene 중 첫 번째.)
+
+"I will now gather my equipment."
+
+Equipment needed (필요 장비):
+- Kidney dish (신장형 쟁반)
+- Medication vial – Heparin Sodium 5000 units/mL (약물 바이알)
+- Syringe – 1 mL or 3 mL (주사기)
+- Drawing up needle – pink/blunt (약물 추출용 바늘)
+- Administration needle – SubCut (25-27G, short) (투여용 바늘)
+- Alcohol/antiseptic swab (소독 스왑)
+- Sharps container nearby (주사침 폐기통)
+- Medication chart (처방전 차트)
+
+(한국어: 모든 장비를 준비해서 정리한다.)
+
+
+========================================================================
+PART 4: INTRODUCE YOURSELF + VERIFY PATIENT ID (환자 인사 + 신원 확인)
+========================================================================
+
+*Knock and enter*
+
+"Hello Marlee, how are you today? My name is [your name].
+I am a student nurse and I will be looking after you today."
+
+(한국어: 노크 후 입장, 자기소개.)
+
+"So Marlee, the doctor has prescribed a medication for you
+called Heparin Sodium. It is a subcutaneous injection – a small
+injection just under the skin. It is to help prevent blood clots
+while you are recovering from your surgery."
+
+"I just want to let you know about some possible side effects.
+You might get some bruising where I give the injection, and
+there is a small chance of minor bleeding. If you notice
+anything unusual, please let the nurses know straight away."
+
+(한국어: 약물 이름, 목적, 부작용을 동의 구하기 전에 설명.
+ 멍, 출혈 가능성. 이상 시 간호사 보고.)
+
+"Do you have any questions about that?
+Are you happy for me to give this to you today?"
+(부작용 설명 후 동의 획득)
+
+"Before I do that, I just need to check your identity.
+Could you please tell me your full name and date of birth?"
+
+Patient responds: "Marlee Talinga, 13th of January 2002."
+
+"Thank you. I will just check your armband as well."
+
+*Check armband*
+
+"Marlee Talinga, date of birth 13th of January 2002,
+URN 123495. That matches the medication chart. Perfect."
+
+(한국어: 환자에게 이름, 생년월일을 직접 말하게 하고,
+ 팔찌의 URN을 처방전과 대조 확인.)
+
+"I am going to go and prepare your medication now.
+I will be back in a few minutes."
+
+(한국어: 약물 준비하러 간다고 알린다.)
+
+
+========================================================================
+PART 5: FIRST CHECK – 1차 약물 확인 (약물 준비 구역에서)
+========================================================================
+
+*Perform hand hygiene*
+
+"I will now do my first medication check."
+
+(한국어: 약물 준비 구역에서 1차 확인을 시행한다.)
+
+1. COMPARE LABEL vs ORDER:
+"I am checking the label on the vial against the medication
+chart. The vial says Heparin Sodium and the chart says
+Heparin Sodium. That matches."
+(약 라벨 vs 처방전 대조 – 헤파린 소듐 일치)
+
+2. EXPIRY DATE:
+"I am checking the expiry date on the vial. It expires
+[next year / state date]. It has not expired, so it is safe
+to use."
+(유효기간 확인 – 만료되지 않았으므로 사용 가능)
+
+3. DOSE CALCULATION:
+"The prescribed dose is 5000 units. The vial contains
+5000 units in 1 mL. So I need to draw up 1 mL to get
+5000 units. No further calculation is needed."
+(용량 계산: 5000 units ÷ (5000 units/1 mL) = 1 mL 추출 필요.
+ 추가 계산 불필요.)
+
+"My first check is done."
+
+
+========================================================================
+PART 6: DRAW UP MEDICATION (약물 추출)
+========================================================================
+
+*Perform hand hygiene*
+
+"I will now prepare the medication."
+
+(한국어: 비접촉 기술로 약물을 추출한다.)
+
+1. "I am attaching the drawing up needle to my syringe
+   using a non-touch technique."
+   (추출용 바늘을 비접촉 기법으로 주사기에 연결)
+
+2. "I will clean the top of the vial with an alcohol swab
+   and wait for it to dry."
+   (바이알 상단을 알코올 스왑으로 소독 후 건조 대기)
+
+3. "I am now drawing up 1 mL of Heparin Sodium – which is
+   5000 units."
+   (1 mL = 5000 units 추출)
+
+4. "I will now use the scoop technique to recap the drawing
+   up needle safely."
+   (스쿱 기법으로 안전하게 뚜껑 닫기)
+
+5. "I am now changing to the subcutaneous administration
+   needle."
+   (추출용 바늘을 제거하고 피하주사용 투여 바늘로 교체)
+
+6. "I will dispose of the drawing up needle in the sharps
+   container."
+   (추출용 바늘은 주사침 폐기통에 버린다)
+
+
+========================================================================
+PART 7: SECOND CHECK + FIRST 5 RIGHTS (2차 확인 + 1차 5 Rights)
+========================================================================
+
+*Perform hand hygiene*
+
+"I will now do my second medication check."
+
+(한국어: 2차 약물 확인을 시행한다.)
+
+--- SECOND CHECK (2차 확인) ---
+
+"I am comparing the label on the vial again against the
+medication chart. Heparin Sodium matches Heparin Sodium.
+The dose is 5000 units. I have drawn up 1 mL which is
+5000 units. The expiry date is still within date."
+
+(약 라벨 vs 처방전 재대조 – 일치 확인)
+
+--- FIRST FIVE RIGHTS (1차 5 Rights) ---
+
+"I will now check my five rights."
+
+1. "Right Patient – Marlee Talinga, URN 123495. I confirmed
+   this when I introduced myself to the patient and checked
+   her armband."
+   (올바른 환자 – 이름, URN 확인)
+
+2. "Right Medication – Heparin Sodium, as prescribed on the
+   medication chart."
+   (올바른 약물 – 헤파린 소듐)
+
+3. "Right Dose – 5000 units. I have drawn up 1 mL from a
+   vial of 5000 units per 1 mL."
+   (올바른 용량 – 5000 units = 1 mL)
+
+4. "Right Route – Subcutaneous, as written on the medication
+   chart and confirmed appropriate in the drug guide."
+   (올바른 경로 – 피하주사)
+
+5. "Right Time – It is BD, due at 0800. It has not been
+   given yet today."
+   (올바른 시간 – BD 0800, 아직 투여되지 않음)
+
+"My second check and first five rights are complete."
+
+
+========================================================================
+PART 8: ALLERGY CHECK (알레르기 확인)
+========================================================================
+
+"I will also check for allergies. Looking at the medication
+chart, the allergy section shows nil known allergies."
+
+(한국어: 처방전의 알레르기 란 확인 – 알려진 알레르기 없음.)
+
+"I will also confirm this with the patient at the bedside."
+
+(한국어: 침상에서 환자에게도 직접 물어볼 것임.)
+
+
+========================================================================
+PART 9: BEDSIDE – THIRD CHECK + SECOND 5 RIGHTS
+        (침상 이동 → 3차 확인 + 2차 5 Rights)
+========================================================================
+
+*Perform hand hygiene on the way in*
+
+"Hi Marlee, I am back with your medication."
+
+--- RECONFIRM PATIENT IDENTITY (환자 신원 재확인) ---
+
+"Marlee, I just need to confirm your identity again.
+Could you please tell me your full name and date of birth?"
+
+Patient responds: "Marlee Talinga, 13th of January 2002."
+
+"Thank you. I will just check your armband again."
+
+*Check armband*
+
+"Marlee Talinga, date of birth 13th of January 2002,
+URN 123495. That matches my medication chart. Perfect."
+
+(한국어: 이름, 생년월일을 구두로 재확인 + 팔찌 URN 대조.)
+
+--- THIRD CHECK (3차 확인 – 반드시 침상에서) ---
+
+"I will now do my third and final medication check."
+
+"Checking the vial label against the medication chart –
+Heparin Sodium matches Heparin Sodium. The dose is
+5000 units and I have 1 mL drawn up which is 5000 units.
+Expiry date is within date."
+
+(3차 확인: 약 라벨 vs 처방전 최종 대조 – 일치)
+
+--- SECOND FIVE RIGHTS (2차 5 Rights) ---
+
+"I will now check my five rights again."
+
+1. "Right Patient – Marlee Talinga. I have just confirmed
+   her name, date of birth, and URN against the chart and
+   her armband. So I have the right patient."
+   (올바른 환자 – 방금 재확인 완료)
+
+2. "Right Medication – Heparin Sodium, as prescribed."
+   (올바른 약물)
+
+3. "Right Dose – 5000 units, drawn up as 1 mL."
+   (올바른 용량)
+
+4. "Right Route – Subcutaneous."
+   (올바른 경로)
+
+5. "Right Time – BD at 0800. It has not been given yet."
+   (올바른 시간)
+
+--- ALLERGY RE-CHECK (알레르기 재확인) ---
+
+"Marlee, do you have any allergies that I need to know about?"
+
+Patient responds: "No, I don't have any allergies."
+
+"That matches what is on your medication chart, which says
+nil known allergies. I can also see you do not have a red
+allergy identification band. So that is consistent."
+
+(한국어: 환자에게 직접 알레르기 여부 질문 → 차트와 대조 →
+ 빨간 알레르기 팔찌 없음 확인. 모두 일치.)
+
+"My third check and second five rights are complete."
+
+
+========================================================================
+PART 10: CONFIRM CONSENT (동의 재확인)
+========================================================================
+
+"Marlee, are you still happy for me to go ahead with the
+injection?"
+
+Patient responds: "Yes."
+
+"Thank you, Marlee."
+
+(한국어: 동의 재확인 – 부작용은 Part 4에서 이미 설명함.)
+
+
+========================================================================
+PART 11: SELECT INJECTION SITE + POSITIONING
+         (주사 부위 선택 + 체위)
+========================================================================
+
+"For a subcutaneous injection, I will give this in your
+abdomen. I will choose a site that is at least 5 centimetres
+away from your belly button, and away from any scars or
+bruising."
+
+(한국어: 피하주사 부위로 복부를 선택.
+ 배꼽에서 5cm 이상 떨어진 곳, 흉터/멍 없는 곳.)
+
+"Because your surgery was on your leg – your tibia – the
+abdomen is a good site for this injection."
+
+(한국어: 수술 부위가 다리(경골)이므로 복부는 적절한 부위.)
+
+"I am going to help you get into a comfortable position.
+I will just lower the bed a little bit so your abdomen
+is easy to access. Is that comfortable for you?"
+
+Patient responds: "Yes, that's fine."
+
+"I will just expose the injection area. Is that okay?"
+
+Patient responds: "Yes."
+
+(한국어: 환자를 편한 자세로 눕히고 복부 접근 가능하게 한다.)
+
+
+========================================================================
+PART 12: ADMINISTER INJECTION (주사 시행)
+========================================================================
+
+*Perform hand hygiene*
+
+(한국어: 주사 시행 전 손위생.)
+
+1. SWAB THE SITE:
+"I will clean the injection site with an antiseptic swab
+using a single stroke outward. I will wait for it to dry."
+(소독 스왑으로 주사 부위를 바깥쪽으로 한 번 닦고 건조 대기)
+
+2. PINCH THE SKIN:
+"I am going to pinch the skin to create a fold of
+subcutaneous tissue."
+(피하 조직 접히도록 피부를 집는다)
+
+3. INSERT NEEDLE:
+"I am inserting the needle at a 45-degree angle."
+(45도 각도로 바늘 삽입)
+
+4. INJECT MEDICATION:
+"I am now injecting the medication slowly."
+(약물을 천천히 주입)
+
+   *** NOTE: Do NOT aspirate for subcutaneous heparin. ***
+   (중요: 피하 헤파린은 흡인(aspirate)하지 않는다.)
+
+5. REMOVE NEEDLE:
+"I am removing the needle smoothly."
+(바늘을 부드럽게 제거)
+
+   *** NOTE: Do NOT massage the site after heparin injection
+       – this can increase bruising. ***
+   (중요: 헤파린 주사 후 주사부위를 문지르지 않는다 – 멍 악화 방지.)
+
+6. DISPOSE:
+"I will dispose of the needle and syringe directly into
+the sharps container."
+(바늘과 주사기를 주사침 폐기통에 바로 버린다)
+
+
+========================================================================
+PART 13: POST-ADMINISTRATION CARE (사후 관리)
+========================================================================
+
+1. SIGN THE CHART:
+"I will now sign the medication chart to show that the
+medication has been given. I will write today's date,
+the time – 0800 – and my initials."
+
+(한국어: 처방전에 서명 – 날짜, 시간(0800), 이니셜 기록.)
+
+2. CONCLUDE WITH PATIENT:
+"Okay Marlee, that is all done. How are you feeling?
+Here is your buzzer – if you feel any unusual bleeding
+or bruising, or if you need anything at all, just press
+the buzzer and a nurse will come to help you."
+
+"I will come back to check on you in about 30 minutes."
+
+(한국어: 환자에게 완료를 알리고, 부저를 주며,
+ 이상 반응 시 부저를 누르라고 안내.
+ 30분 후 다시 확인하겠다고 말함.)
+
+3. HAND HYGIENE:
+*Perform hand hygiene*
+
+(한국어: 마무리 손위생.)
+
+
+========================================================================
+PART 14: CRITICAL THINKING QUESTIONS (비판적 사고 질문)
+========================================================================
+
+----------------------------------------------------------------------
+Q1: Self-Reflection (자가 성찰)
+    "Reflecting on your administration, is there anything
+     important you would consider or do differently next time?"
+----------------------------------------------------------------------
+
+SAMPLE ANSWER:
+
+"Reflecting on my administration, I think there are a few
+things I could improve for next time."
+
+"First, I could have been more thorough with my hand hygiene.
+I should make sure I am doing hand hygiene at every required
+moment – before touching the patient, before the procedure,
+after touching the patient, and after touching the patient's
+surroundings."
+
+"Second, I think I could have explained the medication and
+its purpose more clearly to the patient. Next time, I would
+take a bit more time to make sure the patient fully understands
+why they are receiving the injection and what to expect."
+
+"Third, I should also check the expiry dates of all my
+equipment, not just the medication – for example, the syringe,
+the needles, and the alcohol swab."
+
+(한국어: 자가 성찰 예시 답변
+ 1) 손위생을 더 철저히 해야 했다
+ 2) 약물 설명을 더 명확히 해야 했다
+ 3) 약물뿐 아니라 장비(주사기, 바늘, 스왑)의 유효기간도 확인해야 했다
+
+ *** 본인의 실제 영상을 보고 놓친 부분을 구체적으로 쓸 것! ***)
+
+
+----------------------------------------------------------------------
+Q2: Ongoing Care / Assessment (지속 관리 및 평가)
+    "What ongoing care or assessments might you provide
+     to Marlee in the coming hours?"
+----------------------------------------------------------------------
+
+SAMPLE ANSWER:
+
+"For Marlee's ongoing care, I would do the following."
+
+"First, I would continue to monitor her vital signs regularly,
+including her temperature, heart rate, blood pressure, and
+respiratory rate, because she is postoperative and at risk
+of complications."
+
+"Second, I would check the injection site for any signs of
+excessive bruising or bleeding, since heparin can increase
+bleeding risk."
+
+"Third, I would monitor for signs of wound infection at her
+surgical site on the tibia. I would check for redness, swelling,
+warmth, and any discharge around the wound dressing."
+
+"Fourth, I would do a pain assessment to make sure her pain
+is well managed after surgery."
+
+"Fifth, I would encourage Marlee to mobilise as able,
+and make sure her TED stockings are fitted properly, as
+these are also part of her VTE prevention plan."
+
+"Sixth, I would monitor her platelet count if she continues
+on heparin, to watch for heparin-induced thrombocytopenia."
+
+(한국어: 지속 관리 답변 예시
+ 1) 활력징후 지속 모니터링 (수술 후 합병증 위험)
+ 2) 주사부위 멍/출혈 확인 (헤파린 부작용)
+ 3) 수술 상처 감염 징후 관찰 (발적, 부종, 열감, 분비물)
+ 4) 통증 사정
+ 5) 조기 보행 격려 + TED 스타킹 착용 확인 (VTE 예방)
+ 6) 혈소판 수치 모니터링 (HIT 감시))
+
+
+----------------------------------------------------------------------
+Q3: (과제에서 제공되는 질문 – 당일 확인 후 답변)
+----------------------------------------------------------------------
+
+(한국어: 3번째 질문은 평가 당일 제공된다.
+ 이전 예시를 참고하면 문화적 배려, 특수 상황 등일 수 있다.
+ 준비 포인트: Aboriginal/Torres Strait Islander 환자 배려,
+ 트랜스젠더 환자 배려, buddy nurse 필요성 등.)
+
+
+========================================================================
+WRITTEN RESPONSES (서면 응답 – 영상 업로드 후 24시간 이내 제출)
+========================================================================
+
+----------------------------------------------------------------------
+WRITTEN RESPONSE 1: SELF-REFLECTION (자가 성찰)
+----------------------------------------------------------------------
+
+(한국어: 영상을 다시 보고, 놓치거나 잘못한 안전 단계를 찾아서
+ 어떻게 했어야 하는지 구체적으로 쓴다.)
+
+TEMPLATE:
+
+"After reviewing my video, I noticed that I [missed/did not
+complete] [specific step]. This step is important because
+[reason]. To correctly complete this step, I should have
+[describe the correct action in detail]."
+
+"For example, if I missed checking the patient's allergy band,
+I would write: I did not check the patient's allergy
+identification band during my third check at the bedside.
+This is important because it helps confirm the patient has
+no known allergies before administering medication. To correctly
+complete this step, I should have looked at the patient's wrist
+for a red allergy band and compared this information with the
+allergy section on the medication chart."
+
+(한국어: 위 템플릿을 참고해서 실제 영상에서 놓친 부분을 찾아 작성.
+ 반드시 1) 무엇을 놓쳤는지, 2) 왜 중요한지, 3) 어떻게 해야 했는지
+ 세 가지를 포함해야 함.)
+
+
+----------------------------------------------------------------------
+WRITTEN RESPONSE 2: ISBAR HANDOVER (ISBAR 핸드오버)
+----------------------------------------------------------------------
+
+(한국어: Case Study에서 Q-ADDs 3점 상황에 대한 의사 보고.
+ 아래는 ISBAR 형식의 핸드오버 예시.)
+
+--- I – IDENTIFICATION (신원 확인) ---
+
+"Hello Dr Jones, my name is [your name]. I am the student
+registered nurse caring for Marlee Talinga on Ward [X].
+Her date of birth is the 13th of January 2002 and her
+URN is 123495."
+
+(한국어: 본인 이름/역할, 환자 이름, DOB, URN 소개.)
+
+
+--- S – SITUATION (현재 상황) ---
+
+"I am calling because during Marlee's routine observations,
+she has scored a Q-ADDs of 3. Her temperature is 38.6 degrees
+Celsius and her pulse is 106 beats per minute. I have also
+noticed increasing redness and warmth of the skin around her
+wound dressing on her left leg."
+
+(한국어: Q-ADDs 3점, 체온 38.6도, 맥박 106, 상처 주변 발적과 열감.)
+
+
+--- B – BACKGROUND (배경) ---
+
+"Marlee is a 24-year-old female who is 2 days postoperative
+following an open reduction and internal fixation – ORIF –
+of her tibia. She had a fall from her electric scooter.
+She is currently prescribed Heparin Sodium 5000 units
+subcutaneously twice daily for VTE prophylaxis, and TED
+stockings for mechanical prophylaxis."
+
+(한국어: 24세 여성, 경골 ORIF 수술 후 2일째,
+ 전동 스쿠터 낙상, 현재 헤파린 + TED 스타킹 처방.)
+
+
+--- A – ASSESSMENT (평가) ---
+
+"I am concerned that Marlee may be developing a wound
+infection. Her temperature of 38.6 and pulse of 106 are
+elevated, and there is increasing redness and warmth around
+her wound dressing. Her other vital signs are within normal
+range – blood pressure is 118 over 84, respiratory rate is 16,
+oxygen saturation is 97% on room air, and she is alert."
+
+(한국어: 상처 감염 가능성 의심.
+ 체온과 맥박 상승, 상처 주변 발적/열감.
+ 기타 활력징후는 정상 – BP 118/84, RR 16, O2 97% RA, 의식 명료.)
+
+
+--- R – RECOMMENDATIONS (권고) ---
+
+"I would like to request that you come and review Marlee.
+I think it would be helpful to inspect the wound for signs
+of infection, and possibly order some blood tests such as
+a full blood count and CRP to check for infection markers.
+Antibiotics may also need to be considered if infection
+is confirmed. Is there anything else you would like me to
+do in the meantime?"
+
+(한국어: 의사 진찰 요청, 상처 검사, 혈액검사(FBC, CRP) 의뢰,
+ 감염 확인 시 항생제 고려, 추가 지시 여부 확인.)
+
+
+========================================================================
+QUICK REFERENCE – KEY POINTS TO REMEMBER (핵심 요약)
+========================================================================
+
+1. 3 MEDICATION CHECKS (3회 약물 확인):
+   - 1st: At medication preparation area (약물 준비 구역)
+   - 2nd: After drawing up, before going to patient (추출 후)
+   - 3rd: At the bedside with the patient (반드시 침상에서!)
+
+2. 5 RIGHTS x 2 (5 Rights 2회):
+   - 1st set: During 2nd check (2차 확인 때)
+   - 2nd set: During 3rd check at bedside (침상에서 3차 확인 때)
+
+3. PATIENT ID VERIFICATION (환자 신원 확인):
+   - Ask name + DOB verbally (구두로 이름+생년월일)
+   - Check armband URN vs chart (팔찌 URN vs 차트 대조)
+   - Do this at introduction AND at bedside 3rd check
+     (첫 인사 때 + 침상 3차 확인 때, 총 2회)
+
+4. ALLERGY CHECK (알레르기 확인):
+   - Check chart (차트 확인)
+   - Ask patient directly (환자에게 직접 질문)
+   - Check for red allergy band (빨간 알레르기 팔찌 확인)
+
+5. SUBCUTANEOUS HEPARIN SPECIFICS (피하 헤파린 특이사항):
+   - Pinch the skin (피부 집기)
+   - 45-degree angle (45도 각도)
+   - Do NOT aspirate (흡인 금지)
+   - Do NOT massage after injection (주사 후 문지르기 금지)
+   - Site: Abdomen, 5cm away from umbilicus (복부, 배꼽에서 5cm 이상)
+
+6. HAND HYGIENE (손위생):
+   - Before touching patient (환자 접촉 전)
+   - Before procedure/aseptic task (절차/무균 작업 전)
+   - After body fluid exposure (체액 노출 후)
+   - After touching patient (환자 접촉 후)
+   - After touching patient surroundings (환자 주변 환경 접촉 후)
+
+========================================================================
+END OF SCRIPT
+========================================================================
